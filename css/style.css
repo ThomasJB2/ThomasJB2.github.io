@@ -116,3 +116,11 @@ footer {
   margin-left: 36rem;
   margin-bottom: 10rem;
 }
+.sub-titles {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
