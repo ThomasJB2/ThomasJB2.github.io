@@ -21,12 +21,13 @@
     <link rel="icon" href="/images/Bell (light).png" />
   </head>
   <body>
+    <audio id="btnPressSound" src="/sounds/communications_start_transmission.mp3"></audio>
     <div>
       <nav
         class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand btnPress" href="/index.html">
             <img src="/images/Bell (light).png" height="50px" width="50px" />
           </a>
           <button
@@ -51,20 +52,19 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+                <a class="nav-link" class="btnPress" href="/pages/gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/about.html">About</a>
+                <a class="nav-link btnPress" href="/pages/about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html">Contact</a>
+                <a class="nav-link btnPress" href="/pages/contact.html">Contact</a>
               </li>
             </ul>
             <div>
               <ul class="socials">
                 <li class="socials">
-                  <a
-                    href="https://www.instagram.com/thomas.j.bell/"
+                  <a onclick="socialPress.play()"  href="https://www.instagram.com/thomas.j.bell/"
                     target="_blank"
                     ><img
                       src="/images/instagram.png"
@@ -74,7 +74,8 @@
                   /></a>
                 </li>
                 <li class="socials">
-                  <a
+                  <a                  
+                    onclick="socialPress.play()"
                     href="https://www.flickr.com/people/thomasjbell/"
                     target="_blank"
                     ><img
@@ -85,7 +86,8 @@
                   /></a>
                 </li>
                 <li class="socials" id="socials">
-                  <a
+                  <a                  
+                    onclick="socialPress.play()"
                     href="https://www.linkedin.com/in/thomasbell2/"
                     target="_blank"
                     ><img
@@ -105,7 +107,7 @@
     <h1 class="home-titles" id="home-title-1">I'm Thomas</h1>
     <h2 class="home-titles" id="home-title-2">A Photographer from the UK</h2>
     <div class="btn-home">
-      <a class="btn btn-home" href="/pages/about.html">Learn More About Me</a>
+      <a onmousedown="btnPress.play()" class="btn btn-home" href="/pages/about.html">Learn More About Me</a>
     </div>
     <h1 class="main-titles" id="home-title-3">Showcase</h1>
     <div id="carouselExample" class="carousel slide">
@@ -151,8 +153,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    <footer>
-      <p class="footer-text">Copyright &copy Thomas Bell 2024</p>
-    </footer>
+      <footer>
+        <p class="footer-text">Copyright &copy Thomas Bell 2024</p>
+      </footer>
   </body>
 </html>
