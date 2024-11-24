@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .grid-container {
   align-items: center;
@@ -17,13 +18,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-#carouselExample {
-  margin-left: 16rem;
-  margin-right: 16rem;
-  margin-top: 4rem;
-  margin-bottom: 10rem;
-  border-radius: 2rem;
 }
 #home-title-0 {
   margin-top: 2rem;
@@ -48,6 +42,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 #gallery-title {
   margin-top: 6rem;
@@ -56,6 +51,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .btn {
   color: white;
@@ -109,6 +105,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .about-text {
   color: white;
@@ -120,6 +117,7 @@ footer {
   margin-right: 36rem;
   margin-left: 36rem;
   margin-bottom: 10rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .sub-titles {
   margin-top: 3rem;
@@ -128,12 +126,9 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 /* .card-img-top {
   width: 2048px;
   height: 1365px;
 } */
-.cara-img {
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
