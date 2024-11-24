@@ -12,7 +12,11 @@
   padding: 2rem;
 }
 body {
-  background-image: url("/images/frosty-sunrise.png");
+  background: url("/images/frosty-sunrise.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #carouselExample {
   margin-left: 16rem;

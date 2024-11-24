@@ -6,6 +6,8 @@
   box-sizing: border-box;
   overflow: hidden;
   margin-bottom: 0.75rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Next & previous buttons */
@@ -67,5 +69,4 @@
 } */
 .ss-slides img {
   display: block;
-  border-radius: 1rem;
 }
