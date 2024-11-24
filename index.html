@@ -12,12 +12,13 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/cara-style.css" />
+    <link rel="stylesheet" href="/css/slideshow-style.css" />
+    <link rel="stylesheet" href="/css/navbar-style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/script.js"></script>
     <link rel="icon" href="/images/Bell (light).png" />
   </head>
   <body>
@@ -117,57 +118,41 @@
     <h2 class="home-titles" id="home-title-2">A Photographer from the UK</h2>
     <div class="btn-home">
       <a
-        onmousedown="btnPress.play()"
+        onmouseover="btnPress.play()"
         class="btn btn-home"
         href="/pages/about.html"
         >Learn More About Me</a
       >
     </div>
     <h1 class="main-titles" id="home-title-3">Showcase</h1>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/images/g-arul-plane.jpg"
-            class="cara-img d-block w-100"
-            alt="..."
-            s
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/images/malham-tarn-evening.jpg"
-            class="cara-img d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/images/abandoned-car.jpg"
-            class="cara-img d-block w-100"
-            alt="..."
-          />
-        </div>
+    <div class="slideshow-container">
+      <div class="ss-slides fadeIn" style="display: block">
+        <img src="/images/abandoned-car.jpg" style="width: 100%" />
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="ss-slides fadeIn" style="display: block">
+        <img src="/images/g-arul-plane.jpg" style="width: 100%" />
+      </div>
+      <div class="ss-slides fadeIn" style="display: block">
+        <img src="/images/alpine-a110.jpg" style="width: 100%" />
+      </div>
+      <div class="ss-slides fadeIn" style="display: block">
+        <img src="/images/malham-tarn-evening.jpg" style="width: 100%" />
+      </div>
+      <div class="ss-slides fadeIn" style="display: block">
+        <img src="/images/green-tree.jpg" style="width: 100%" />
+      </div>
+      <a class="ss-prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="ss-next" onclick="changeSlide(1)">&#10095;</a>
     </div>
+    <div style="text-align: center">
+      <span class="ss-dot" onclick="showSlide(0)"></span>
+      <span class="ss-dot" onclick="showSlide(1)"></span>
+      <span class="ss-dot" onclick="showSlide(2)"></span>
+      <span class="ss-dot" onclick="showSlide(3)"></span>
+      <span class="ss-dot" onclick="showSlide(4)"></span>
+    </div>
+    <br />
+    <script src="/js/script.js"></script>
     <footer>
       <p class="footer-text">Copyright &copy Thomas Bell 2024</p>
     </footer>
