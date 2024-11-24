@@ -1,5 +1,5 @@
 .home-titles {
-  font-size: 5rem;
+  font-size: 4vw;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
@@ -20,7 +20,7 @@ body {
   background-size: cover;
 }
 #home-title-0 {
-  margin-top: 2rem;
+  margin-top: 2vh;
   font-weight: 600;
 }
 #home-title-1 {
@@ -31,13 +31,13 @@ body {
 }
 #home-title-3 {
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1rem;
-  font-size: 6rem;
+  margin-top: 4vh;
+  font-size: 4.5vw;
   font-weight: 800;
 }
 .main-titles {
   margin-top: 6rem;
-  font-size: 6rem;
+  font-size: 4.5vw;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -46,7 +46,7 @@ body {
 }
 #gallery-title {
   margin-top: 6rem;
-  font-size: 6rem;
+  font-size: 4.5vw;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -68,7 +68,7 @@ body {
   border-color: #5f5d5c;
 }
 .btn-home {
-  margin-top: 1rem;
+  margin-top: 2vh;
   text-align: center;
 }
 .btn-outline-success:active {
@@ -88,7 +88,7 @@ footer {
   display: block;
   height: 15%;
   width: 15%;
-  margin-top: 12rem;
+  margin-top: 12vh;
 }
 .socials {
   display: inline-flex;
@@ -99,8 +99,8 @@ footer {
   margin-right: 0.5rem;
 }
 #about-title {
-  margin-top: 6rem;
-  font-size: 6rem;
+  margin-top: 10vh;
+  font-size: 4.5vw;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -111,17 +111,17 @@ footer {
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   text-align: center;
-  margin-top: 4rem;
-  margin-right: 36rem;
-  margin-left: 36rem;
+  margin-top: 4vh;
+  margin-right: 20vw;
+  margin-left: 20vw;
   margin-bottom: 10rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .sub-titles {
-  margin-top: 3rem;
-  font-size: 3rem;
+  margin-top: 3vh;
+  font-size: 3vw;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -132,3 +132,7 @@ footer {
   width: 2048px;
   height: 1365px;
 } */
+.card {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+}
