@@ -9,8 +9,14 @@
   align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  padding: 2rem;
+  grid-gap: 1%;
+  padding: 2%;
+}
+.card-title {
+  font-size: 1vmax;
+}
+.card-text {
+  font-size: 0.7vmax;
 }
 body {
   background: url("/images/frosty-sunrise.png") no-repeat center center fixed;
@@ -57,6 +63,7 @@ body {
   color: white;
   background-color: #3d3b3a;
   border-color: #3d3b3a;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
   color: white;
