@@ -1,16 +1,53 @@
-.home-titles {
-  font-size: 4vw;
-  font-family: Arial, Helvetica, sans-serif;
+/* Root Style / all pages */
+html {
+  font-family: "Poppins" sans-serif;
+}
+body {
+  background: url("/images/frosty-sunrise.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.socials {
+  display: inline-flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+footer {
+  background-color: #3d3b3a;
+  text-align: center;
+  padding: 0.5rem;
+  color: #afadac;
+}
+
+/* Gallery Page with Cards */
+#gallery-title {
+  margin-top: 4%;
+  font-size: 5vmax;
+  font-weight: 800;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
+.sub-titles {
+  margin-top: 1%;
+  font-size: 3vmax;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
 .grid-container {
   align-items: center;
   /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1%; */
-  padding: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1%; */
+  padding: 1.5%;
 }
 .card {
   height: 100%;
@@ -18,16 +55,15 @@
   border: none;
 }
 .card-title {
-  font-size: 1vmax;
+  text-decoration: none;
+  color: black;
 }
 .card-text {
-  font-size: 0.7vmax;
+  text-decoration: none;
+  color: black;
 }
-.card-btn {
-  margin-top: auto;
-  margin-bottom: 1%;
-  margin-left: auto;
-  font-size: 0.8vmax;
+.card-main {
+  text-decoration: none;
 }
 .grid-container .card {
   display: inline-block;
@@ -39,12 +75,30 @@
     -moz-column-count: 1;
     column-count: 1;
   }
+  .card-title {
+    font-size: 1.5vmax;
+  }
+  .card-text {
+    font-size: 1.2vmax;
+  }
+  .card {
+    margin-bottom: 3%;
+  }
 }
 @media only screen and (min-width: 601px) {
   .grid-container {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+  .card-title {
+    font-size: 1.25vmax;
+  }
+  .card-text {
+    font-size: 0.95vmax;
+  }
+  .card {
+    margin-bottom: 3%;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -53,13 +107,20 @@
     -moz-column-count: 4;
     column-count: 4;
   }
+  .card-title {
+    font-size: 0.95vmax;
+  }
+  .card-text {
+    font-size: 0.75vmax;
+  }
 }
-body {
-  background: url("/images/frosty-sunrise.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+/*Home Page*/
+.home-titles {
+  font-size: 4vw;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 #home-title-0 {
   margin-top: 2vh;
@@ -72,28 +133,17 @@ body {
   font-weight: 300;
 }
 #home-title-3 {
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 4vh;
   font-size: 4.5vw;
   font-weight: 800;
 }
 .main-titles {
   margin-top: 6%;
-  font-size: 4.5vw;
+  font-size: 5vmax;
   font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-#gallery-title {
-  margin-top: 4%;
-  font-size: 4.5vw;
-  font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 .btn {
   color: white;
@@ -118,12 +168,8 @@ body {
   background-color: #afadac;
   border-color: #5f5d5c;
 }
-footer {
-  background-color: #3d3b3a;
-  text-align: center;
-  padding: 0.5rem;
-  color: #afadac;
-}
+
+/*About Page*/
 #portrait-img {
   border-radius: 50%;
   margin-left: auto;
@@ -131,43 +177,24 @@ footer {
   display: block;
   height: 15%;
   width: 15%;
-  margin-top: 12vh;
-}
-.socials {
-  display: inline-flex;
-  margin-top: auto;
-  margin-bottom: auto;
-  list-style: none;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-top: 12vmax;
 }
 #about-title {
-  margin-top: 10vh;
-  font-size: 4.5vw;
+  margin-top: 10vmax;
+  font-size: 4vmax;
   font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 .about-text {
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 300;
-  font-size: 1.25vw;
+  font-weight: 400;
+  font-size: 1.5vmax;
   text-align: center;
   margin-top: 4vh;
-  margin-right: 20vw;
-  margin-left: 20vw;
+  margin-right: 20%;
+  margin-left: 20%;
   margin-bottom: 10rem;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-.sub-titles {
-  margin-top: 3%;
-  font-size: 3vw;
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
